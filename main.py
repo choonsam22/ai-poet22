@@ -1,17 +1,11 @@
 import os
 import streamlit as st
 import pdfplumber
-from dotenv import load_dotenv
 from langchain.chat_models import ChatOpenAI
-
-# 환경 변수 로드
-load_dotenv()
-os.environ["OPENAI_MODEL_NAME"] = "gpt-4o-mini"
 
 # 환경 변수 설정
 os.environ["OPENAI_API_KEY"] = "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"
 os.environ["OPENAI_MODEL_NAME"] = "gpt-4o-mini"
-
 
 # PDFPlumberTool 정의
 class PDFPlumberTool:
